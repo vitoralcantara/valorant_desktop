@@ -1,0 +1,53 @@
+.canvas
+{
+   align-items: center;
+   background: #eeeeee;
+   border-radius: 50%;
+   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+   display: flex;
+   height: 15em;
+   justify-content: center;
+   margin: 1em 1em 2em 1em;
+   width: 15em;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+   margin-top: 10%; 
+   
+}
+
+.spinner{
+   background: #0c0518;
+   border-radius: 50%;
+   height: 1.5em;
+   width: 1.5em;
+   margin: .3em;
+}
+
+.p1{
+   animation: fall 1s linear .3s infinite;
+}
+
+.p2{
+   animation: fall 1s linear .2s infinite;
+}
+
+.p3{
+   animation: fall 1s linear .1s infinite;
+}
+
+.p4{
+   animation: fall 1s linear infinite;
+}
+
+@keyframes fall {
+   0%{
+      transform: translateY(-25px);
+   }
+   25%,75%{
+      transform: translateY(0);
+   }
+   100%{
+      transform: translateY(-25px);
+   }
+}
